@@ -25,19 +25,71 @@ def C19_given_F(C19, F):
   else:
     F = prob(0.114)
 
+#Conditional prob. for COVID-19 and cough
 def C19_given_C(C19, C):
   if C19 == True:
     C = prob(0.907)
   else:
     C = prob(0.093)
 
-def C19_given_N(C19, N):
-  if C19 == True:
-    N = prob(0.747)
-  else:
-    N = prob(0.253)
+#Conditional prob. for COVID-19 and nausea
+#def C19_given_N(C19, N):
+#  if C19 == True:
+#    N = prob(0.747)
+#  else:
+#    N = prob(0.253)
     
-	
+#Conditional prob. for fever and cough
+def F_given_C(F, C):
+	if F == True:
+		if C == False:
+			C = prob(0.826)
+		else:
+			C = prob(0.727)
+	else:
+		if C == False:
+			C = prob(0.174)
+		else:
+			C = prob(0.273)
+			
+#Conditional prob. for fever and cough
+def C_given_F(C, F):
+	if C == True:
+		if F == False:
+			F = prob(0.6)
+		else:
+			F = prob(0.457)
+	else:
+		if F == False:
+			F = prob(0.4)
+		else:
+			F = prob(0.543)
+			
+#Conditional prob. for cough and nausea			
+def N_given_C(N, C):
+	if N == True:
+		if C == False:
+			C = prob(0.853)
+		else:
+			C = prob(0.644)
+	else:
+		if C == False:
+			C = prob(0.147)
+		else:
+			C = prob(0.356)
+
+#Conditional prob. for cough and nausea
+def C_given_N(C, N):
+	if C == True:
+		if N == False:
+			N = prob(0.894)
+		else:
+			N = prob(0.724)
+	else:
+		if N == False:
+			N = prob(0.106)
+		else:
+			N = prob(0.276)
 	
 random.seed()
 C19 = random.choice([True, False])
