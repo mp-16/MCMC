@@ -25,16 +25,16 @@ def C19_given_F(C19, F):
   else:
     F = prob(0.114)
     
-def main(): 
-	C19 = random.choice([True, False])
-	F  = random.choice([True, False])
-	C = random.choice([True, False])
-	N = True
-	FC = random.choice([True, False])
-	FN = True
-	CN = random.choice([True, False])
-	list = [C19, F, C, N, FC, FN, CN]
-	print("This is the list: " + str(list))
-	print("Hello World")
+
+C19 = random.choice([True, False])
+F  = random.choice([True, False])
+C = random.choice([True, False])
+N = True
+FC = random.choice([True, False])
+FN = True
+CN = random.choice([True, False])
+list = [C19, F, C, N, FC, FN, CN]
+print("This is the list: " + str(list))
+print("Hello World")
 	
 	
