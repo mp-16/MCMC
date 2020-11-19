@@ -8,7 +8,7 @@
 
 
 import random
-from random import seed
+import seed
 seed(1)
 
 #Returns True with probability p, and False with probability 1-p
