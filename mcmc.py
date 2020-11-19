@@ -7,9 +7,9 @@
 #Purpose: 
 
 
-import random
-import seed
-seed(1)
+from random import random
+from random import seed
+
 
 #Returns True with probability p, and False with probability 1-p
 def prob(p):
@@ -25,7 +25,7 @@ def C19_given_F(C19, F):
   else:
     F = prob(0.114)
     
-
+seed(1)
 C19 = random.choice([True, False])
 F  = random.choice([True, False])
 C = random.choice([True, False])
