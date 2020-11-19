@@ -32,6 +32,7 @@ def main():
 	FC = random.choice([True, False])
 	FN = True
 	CN = random.choice([True, False])
-	print("This is the list: %d", %[C19, F, C, N, FC, FN, CN])
+	list = [C19, F, C, N, FC, FN, CN]
+	print("This is the list: " + list)
 	
 	
