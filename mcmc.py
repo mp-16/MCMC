@@ -25,7 +25,7 @@ def C19_given_F(C19, F):
   else:
     F = prob(0.114)
     
-random.seed(1)
+random.seed(10)
 C19 = random.choice([True, False])
 F  = random.choice([True, False])
 C = random.choice([True, False])
