@@ -6,8 +6,9 @@
 #Assignment: MCMC
 #Purpose: 
 
-import seed
+
 import random
+from random import seed
 seed(1)
 
 #Returns True with probability p, and False with probability 1-p
@@ -34,5 +35,6 @@ def main():
 	CN = random.choice([True, False])
 	list = [C19, F, C, N, FC, FN, CN]
 	print("This is the list: " + str(list))
+	print(N)
 	
 	
