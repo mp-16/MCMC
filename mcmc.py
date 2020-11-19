@@ -25,11 +25,11 @@ def C19_given_F(C19, F):
     F = prob(0.114)
     
 def main(): 
-	C19 = randint(0, 1)
-	F  = randint(0, 1)
-	C = randint(0, 1)
-	N = randint(0, 1)
-	FC = randint(0, 1)
-	FN = randint(0, 1)
-	CN = randint(0, 1)
-	print("This is the list: %s, %s, %s, %s, %s, %s, %s", %C19, %F, %C, %N, %FC, %FN, %CN)
+	C19 = random.choice([True, False])
+	F  = random.choice([True, False])
+	C = random.choice([True, False])
+	N = True
+	FC = random.choice([True, False])
+	FN = True
+	CN = random.choice([True, False])
+	print("This is the list: %s", % [C19, F, C, N, FC, FN, CN])
