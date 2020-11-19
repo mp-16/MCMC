@@ -6,8 +6,9 @@
 #Assignment: MCMC
 #Purpose: 
 
-
+import random
 from random import random
+from random import choice
 from random import seed
 
 
