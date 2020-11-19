@@ -6,7 +6,9 @@
 #Assignment: MCMC
 #Purpose: 
 
+import seed
 import random
+seed(1)
 
 #Returns True with probability p, and False with probability 1-p
 def prob(p):
@@ -21,3 +23,13 @@ def C19_given_F(C19, F):
     F = prob(0.886)
   else:
     F = prob(0.114)
+    
+def main(): 
+	C19 = randint(0, 1)
+	F  = randint(0, 1)
+	C = randint(0, 1)
+	N = randint(0, 1)
+	FC = randint(0, 1)
+	FN = randint(0, 1)
+	CN = randint(0, 1)
+	print("This is the list: %s, %s, %s, %s, %s, %s, %s", %C19, %F, %C, %N, %FC, %FN, %CN)
