@@ -24,7 +24,21 @@ def C19_given_F(C19, F):
     F = prob(0.886)
   else:
     F = prob(0.114)
+
+def C19_given_C(C19, C):
+  if C19 == True:
+    C = prob(0.907)
+  else:
+    C = prob(0.093)
+
+def C19_given_N(C19, N):
+  if C19 == True:
+    N = prob(0.747)
+  else:
+    N = prob(0.253)
     
+	
+	
 random.seed()
 C19 = random.choice([True, False])
 F  = random.choice([True, False])
